@@ -1,7 +1,4 @@
 fun main() {
-    println("Fuckers, I did it yeah")
-
-    var man = Human()
-    man.name = "Reza the Festive"
-    println(man.name)
+    var num : Int = 5;
+    println("the value of num is $num")
 }
