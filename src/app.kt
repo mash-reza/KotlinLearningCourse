@@ -1,3 +1,4 @@
-    fun main() {
-println("Fuckers, I did it yeah")
-    }
+fun main() {
+    println("Fuckers, I did it yeah")
+
+}
