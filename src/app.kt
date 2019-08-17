@@ -1,12 +1,7 @@
 fun main() {
 
 
-    val num : Int = 2
+    val num: IntProgression = 16 downTo 1
 
-    when(num){
-        1 -> println("one")
-        2 -> println("two")
-        3 -> println("three")
-        else -> println("FUCK")
-    }
+    for (i in num step 2) println(i)
 }
