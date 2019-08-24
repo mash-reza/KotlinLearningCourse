@@ -1,7 +1,6 @@
 fun main() {
 
+    var nums = listOf<Int>(1,2,3,4)
+    for ((i,e) in nums.withIndex()) println("$i : $e")
 
-    val num: IntProgression = 16 downTo 1
-
-    for (i in num step 2) println(i)
 }
