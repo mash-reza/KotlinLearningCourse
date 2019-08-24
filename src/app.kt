@@ -1,3 +1,4 @@
+@file:JvmName("App")
 import java.util.*
 
 fun main() {
