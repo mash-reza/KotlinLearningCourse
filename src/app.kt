@@ -1,6 +1,10 @@
+import java.util.*
+
 fun main() {
 
-    var nums = listOf<Int>(1,2,3,4)
-    for ((i,e) in nums.withIndex()) println("$i : $e")
+    var humans = TreeMap<String,Int>()
+    humans.put("Reza",21)
+    humans.put("Shokufeh",23)
+    for ((name,age) in humans) println("$name is $age years old!")
 
 }
