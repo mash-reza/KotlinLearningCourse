@@ -6,4 +6,5 @@ fun main() {
     var result = add(2,4)
     println(result)
 }
-fun add(a : Int, b : Int) : Int = a+b
+@JvmOverloads
+fun add(a : Int, b : Int, c : Int = 5) : Int = a+b
