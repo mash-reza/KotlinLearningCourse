@@ -10,12 +10,12 @@ fun main() {
     shokufeh.skill = "Web developer"
     reza.show()
     shokufeh.show()
-    var myGuy = reza.plus(shokufeh)
+    var myGuy = reza + shokufeh
     myGuy.show()
 
 }
 
-fun Human.plus(person: Human): Human {
+infix operator fun Human.plus(person: Human): Human {
     var guy = Human()
     guy.skill = this.skill + " and " + person.skill
     return guy
