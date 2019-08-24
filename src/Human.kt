@@ -1,4 +1,7 @@
 class Human {
 
-    var name: String? = null
+    var skill: String? = null
+    fun show(){
+        println(skill)
+    }
 }
