@@ -2,9 +2,7 @@ import java.util.*
 
 fun main() {
 
-    var humans = TreeMap<String,Int>()
-    humans.put("Reza",21)
-    humans.put("Shokufeh",23)
-    for ((name,age) in humans) println("$name is $age years old!")
-
+    var result = add(2,4)
+    println(result)
 }
+fun add(a : Int, b : Int) : Int = a+b
