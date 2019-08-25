@@ -1,28 +1,19 @@
 @file:JvmName("App")
-interface A {
-    fun show()
-    fun imagine(){
 
-    }
-}
-interface B{
-    fun display()
-    fun imagine(){
+import java.util.ArrayList
 
-    }
-}
-class C : A,B{
-    override fun show() {
-    }
-
-    override fun display() {
-    }
-
-    override fun imagine() {
+data class Book(var name : String,var price : Int)
+object BookShelf {
+    var books = arrayListOf<Book>()
+    fun printBooks(){
+        for (i in books) println(i)
     }
 }
 
 fun main() {
-
+    BookShelf.books.add(Book("Java", 1000))
+    BookShelf.books.add(Book("JavaFx", 1500))
+    BookShelf.books.add(Book("C", 5000))
+    BookShelf.printBooks()
 
 }
