@@ -1,5 +1,6 @@
-class Alien : Human() {
-    override fun think(){
-        println("Alien is thinking")
+open class Alien : Human() {
+    init{
+        println("Alien constructor")
     }
+
 }

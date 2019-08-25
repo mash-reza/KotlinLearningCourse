@@ -1,6 +1,9 @@
 open class Human {
+    init{
+        println("Human constructor")
+    }
 
-    open fun think() {
-        println("Reza is thinking")
+    open fun think(){
+
     }
 }
