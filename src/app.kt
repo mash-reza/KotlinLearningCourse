@@ -1,11 +1,8 @@
 @file:JvmName("App")
 
-import java.util.*
-
 fun main() {
 
-    var reza = Human("Festive")
-    var ali = Human(53, "Ali")
+    var reza : Human = Alien()
     reza.think()
-    ali.think()
+
 }

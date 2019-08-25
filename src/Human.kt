@@ -1,12 +1,6 @@
-class Human(var name: String = "") {
+open class Human {
 
-    private var age: Int = 0
-
-    constructor(age: Int, name: String) : this(name) {
-        this.age = age
-    }
-
-    fun think() {
-        println("name is $name and age is $age")
+    open fun think() {
+        println("Reza is thinking")
     }
 }
