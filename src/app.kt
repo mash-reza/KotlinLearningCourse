@@ -1,16 +1,13 @@
 @file:JvmName("App")
 
-import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
+import java.util.function.Consumer
 
-class Test{
-    companion object{
-        fun create() = Test()
-    }
-    fun show(){
-        println("in show method")
-    }
-}
+
 fun main() {
-    var obj = Test.create()
-    obj.show()
+    var list = mutableListOf<Int>()
+    list.add(1)
+    list.add(2)
+    list.add(3)
+    list.add(5)
+    list.add(4)
 }
