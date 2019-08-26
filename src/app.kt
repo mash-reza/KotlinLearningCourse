@@ -1,12 +1,16 @@
 @file:JvmName("App")
+
+import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
+
 class Test{
     companion object{
-        @JvmStatic
-        fun run(){
-            println("fun executed")
-        }
+        fun create() = Test()
+    }
+    fun show(){
+        println("in show method")
     }
 }
 fun main() {
-    Test.run()
+    var obj = Test.create()
+    obj.show()
 }
