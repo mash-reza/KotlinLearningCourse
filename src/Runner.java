@@ -1,12 +1,8 @@
 public class Runner {
     public static void main(String[] args) {
-        Thread thread = () -> {
-            System.out.println("my goddamn thread!!");
-        };
-        thread.run();
+        Test.Companion.run();
     }
 }
-
 interface Thread {
     void run();
 }

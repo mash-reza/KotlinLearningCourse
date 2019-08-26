@@ -1,12 +1,12 @@
 @file:JvmName("App")
-interface ThreadKT{
-    fun run()
-}
-fun main() {
-    var threadKT = object : ThreadKT {
-        override fun run() {
-            println("the goddamn thread here in kotlin")
+class Test{
+    companion object{
+        @JvmStatic
+        fun run(){
+            println("fun executed")
         }
     }
-    threadKT.run()
+}
+fun main() {
+    Test.run()
 }
